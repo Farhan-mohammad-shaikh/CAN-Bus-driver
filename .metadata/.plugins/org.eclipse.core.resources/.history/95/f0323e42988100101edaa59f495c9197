@@ -1,21 +1,12 @@
-
-#include <stdio.h>
 #include "uart.h"
 #include "stm32f4xx.h"
 
 static void uart_set_baudrate(uint32_t clk, uint32_t baudrate);
 static uint16_t compute_baud_rate(uint32_t clk, uint32_t baudrate);
-void uart_write_byte(int b);
+void uart_write_byte(uint8_t b);
 
 #define deg_baud_rate   115200
 #define sys_clk         16000000
-
-int __io_putchar (int b)
-{
-	uart_write_byte(b);
-	return b;
-
-}
 
 
 void uart_enable (void)
@@ -51,11 +42,11 @@ void uart_enable (void)
 
 }
 
-void uart_write_byte(int b)
-{   //we need two things to write in UART. first in the status reg the TXE bit should be empty and then the data reg bit where we put the character.
+void uart_write_byte(uint8_t b)
+{
     // Wait until TXE (data register empty)
     while ((USART2->SR & (1U<<7)) == 0u) { /* spin */ }
-    USART2->DR = (b & 0xFF);
+    USART2->DR = b;
 
     // Optionally wait for TC to ensure byte fully shifted out
     // while ((USART2->SR & USART_SR_TC) == 0u) { }

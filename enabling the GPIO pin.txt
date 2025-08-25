@@ -1,0 +1,26 @@
+#enabling the GPIO pin as a uart.. to configure it
+1. enable the clock RCC-> APB1 
+2. set the gpio alternate function as as tx and rx
+to do that go to the user manual to alternate function table and find the usart_tx or usart_rx. we will find a mode and type .. for example mode pa2 and type AF07.
+3. to set the mode GPIOA-> MODER (set for pin 2)
+4. to set the type GPIOA -> AFR[0] (search for AF07)
+
+so the gpio pin is ready to use as uart..
+
+#now to configure uart ..
+1.. set the baud rate
+USART1 -> BRR
+
+#now set to set the uart we need to enable the uart transmitter and uart enable 
+1. to do so we need to go to the control register of uart
+and set 3 and 13 bit to 1
+
+
+#now to write a character we need to go to the status register
+and make we need two things to write in UART. first in the status reg the TXE bit should be empty and then the data reg bit where we put the character.
+    // Wait until TXE (data register empty)
+    while ((USART2->SR & (1U<<7)) == 0u) { /* spin */ }
+    USART2->DR = b;
+
+
+
