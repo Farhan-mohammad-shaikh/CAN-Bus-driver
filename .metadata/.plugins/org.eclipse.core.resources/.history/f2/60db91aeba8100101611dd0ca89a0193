@@ -1,0 +1,21 @@
+#include "systicks.h"
+#include "stm32f4xx.h"
+
+void timebase (void){
+
+	__disable_irq();
+
+	  SysTick->LOAD  = 16000000 - 1U ;                       /* set reload register */
+	  SysTick->VAL   = 0UL;                                             /* Load the SysTick Counter Value */
+	  SysTick->CTRL  = (1U<<2);
+	  SysTick->CTRL  |= (1U<<1);
+	  SysTick->CTRL  |= (1U<<0);
+
+
+
+	__enable_irq();
+
+
+
+
+}

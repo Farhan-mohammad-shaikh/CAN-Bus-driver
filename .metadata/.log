@@ -215,3 +215,36 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-25 11:01:39.939
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-25 12:19:08.791
+!MESSAGE Indexed '3_systick' (5 sources, 66 headers) in 0.501 sec: 3,250 declarations; 5,410 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+!SESSION 2025-08-25 14:57:50.382 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-25 14:57:53.821
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-25 14:57:53.822
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-25 14:57:57.076
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-08-25 15:42:08.343 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-25 15:42:11.978
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-25 15:42:11.978
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-25 15:42:15.564
+!MESSAGE Started RMI Server, listening on port 41337
