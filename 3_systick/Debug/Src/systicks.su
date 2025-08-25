@@ -1,4 +1,5 @@
-../Src/systicks.c:12:20:tick_increment	4	static
-../Src/systicks.c:18:10:get_tick	16	static,ignoring_inline_asm
-../Src/systicks.c:29:6:timebase	4	static,ignoring_inline_asm
-../Src/systicks.c:47:6:SysTick_Handler	8	static
+../Src/systicks.c:14:20:tick_increment	4	static
+../Src/systicks.c:20:10:get_tick	16	static,ignoring_inline_asm
+../Src/systicks.c:29:6:delay	24	static
+../Src/systicks.c:49:6:timebase	4	static,ignoring_inline_asm
+../Src/systicks.c:67:6:SysTick_Handler	8	static

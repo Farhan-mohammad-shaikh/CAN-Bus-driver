@@ -31,15 +31,12 @@ void delay(uint32_t delay){
 	uint32_t tickstart = get_tick();
 	uint32_t wait = delay;
 
-	if(wait < MAX_DELAY){
+	if(wait << MAX_DELAY){
 
 		wait += (uint32_t)TICK_FREQ_INCREMENT;
 
 	}
-	while(get_tick() - tickstart){
-
-
-	}
+	while(get_tick() - tickstart);
 
 
 }

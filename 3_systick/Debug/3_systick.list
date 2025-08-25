@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  0000305c  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00001120  00000000  00000000  0000308c  2**0
+ 12 .debug_info   00001161  00000000  00000000  0000308c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 0000065c  00000000  00000000  000041ac  2**0
+ 13 .debug_abbrev 00000689  00000000  00000000  000041ed  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 000001a8  00000000  00000000  00004808  2**3
+ 14 .debug_aranges 000001b0  00000000  00000000  00004878  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 0000011c  00000000  00000000  000049b0  2**0
+ 15 .debug_rnglists 00000122  00000000  00000000  00004a28  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0000fd34  00000000  00000000  00004acc  2**0
+ 16 .debug_macro  0000fd34  00000000  00000000  00004b4a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   000021fa  00000000  00000000  00014800  2**0
+ 17 .debug_line   00002225  00000000  00000000  0001487e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00055bb2  00000000  00000000  000169fa  2**0
+ 18 .debug_str    00055bc2  00000000  00000000  00016aa3  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  0006c5ac  2**0
+ 19 .comment      00000043  00000000  00000000  0006c665  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000c68  00000000  00000000  0006c5f0  2**2
+ 20 .debug_frame  00000c8c  00000000  00000000  0006c6a8  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000006b  00000000  00000000  0006d258  2**0
+ 21 .debug_line_str 0000006b  00000000  00000000  0006d334  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -459,8 +459,8 @@ void *_sbrk(ptrdiff_t incr)
  8000434:	200001d0 	.word	0x200001d0
 
 08000438 <tick_increment>:
-volatile uint32_t g_current_tick;
-volatile uint32_t g_current_tick_p;
+
+
 
 
 static inline void tick_increment(void)
@@ -481,7 +481,7 @@ static inline void tick_increment(void)
  8000450:	2000007c 	.word	0x2000007c
 
 08000454 <timebase>:
-    return current;
+
 }
 
 

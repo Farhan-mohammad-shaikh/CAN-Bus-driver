@@ -1,4 +1,4 @@
-16:08:42 **** Incremental Build of configuration Debug for project 3_systick ****
+20:29:31 **** Incremental Build of configuration Debug for project 3_systick ****
 make -j16 all 
 arm-none-eabi-gcc "../Src/systicks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I..//Chip_headers/Include -I..//Chip_headers/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/systicks.d" -MT"Src/systicks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/systicks.o"
 arm-none-eabi-gcc -o "3_systick.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/farhan/test project/can bus project/stm32_can_bus/3_systick/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3_systick.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -13,5 +13,5 @@ Finished building: default.size.stdout
 Finished building: 3_systick.list
  
 
-16:08:42 Build Finished. 0 errors, 0 warnings. (took 368ms)
+20:29:32 Build Finished. 0 errors, 0 warnings. (took 309ms)
 
