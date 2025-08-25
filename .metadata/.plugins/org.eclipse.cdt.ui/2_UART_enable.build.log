@@ -1,0 +1,17 @@
+11:09:52 **** Incremental Build of configuration Debug for project 2_UART_enable ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I..//Chip_headers/Include -I..//Chip_headers/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "2_UART_enable.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/farhan/test project/can bus project/stm32_can_bus/2_UART_enable/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_UART_enable.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_UART_enable.elf
+ 
+arm-none-eabi-size  2_UART_enable.elf 
+arm-none-eabi-objdump -h -S 2_UART_enable.elf  > "2_UART_enable.list"
+   text	   data	    bss	    dec	    hex	filename
+    992	      0	   1568	   2560	    a00	2_UART_enable.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_UART_enable.list
+ 
+
+11:09:53 Build Finished. 0 errors, 0 warnings. (took 323ms)
+

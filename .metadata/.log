@@ -194,3 +194,24 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-08-25 08:32:16.887
 !MESSAGE Indexed '1_fpuenable' (3 sources, 62 headers) in 0.617 sec: 3,080 declarations; 5,174 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.024%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-25 09:16:44.862
+!MESSAGE Indexed '2_UART_enable' (4 sources, 63 headers) in 0.46 sec: 3,084 declarations; 5,178 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.024%)
+!SESSION 2025-08-25 11:01:33.047 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-08-25 11:01:34.635
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-25 11:01:36.817
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-25 11:01:36.818
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-25 11:01:39.939
+!MESSAGE Started RMI Server, listening on port 41337

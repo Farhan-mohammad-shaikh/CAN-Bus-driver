@@ -1,0 +1,30 @@
+#include "uart.h"
+#include "stm32f4xx.h"
+
+void uart_enable (void)
+{
+
+ // GPIOA set the pin as UART
+ // for that we need to first enable the GPIOA clock and we can see in the block diagram TX and RX (AF) need to be activated
+ // go to the alternate function mapping in datasheet and see the mode and the type .. in this case mode is PA2 and type is AF07
+
+ // enabling the UART clock and do the rest
+
+
+
+	RCC -> APB1ENR |= (1<<0);
+
+	//as the mode is PA2 means the GPIOA 2 pin need to set as alternate function mode
+	GPIOA -> MODER  |= (1U<<5);
+	GPIOA -> MODER &=~ (1u<<4);
+
+	// set AF07
+	GPIOA -> AFR[0] |= (1U<<8);
+	GPIOA -> AFR[0] |= (1U<<9);
+	GPIOA -> AFR[0] |= (1U<<10);
+	GPIOA -> AFR[0] &=~ (1U<<11);
+
+
+
+
+}
