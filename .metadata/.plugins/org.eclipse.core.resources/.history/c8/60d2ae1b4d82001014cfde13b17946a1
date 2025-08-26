@@ -1,0 +1,15 @@
+#include "bsp.h"
+#include <stdint.h>
+#include <stdio.h>
+#include "stm32f4xx.h"
+
+void led_init(void)
+{
+	RCC ->AHB1ENR |= (1u<<0);
+	GPIOA ->MODER |= (1<<10);
+	GPIOA ->MODER &=~ (1<<11);
+
+
+}
+
+

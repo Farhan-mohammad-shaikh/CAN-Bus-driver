@@ -1,0 +1,70 @@
+#include "systicks.h"
+#include "stm32f4xx.h"
+
+#define TICK_FREQ_INCREMENT   1u          // amount added to the tick counter each ISR
+#define MAX_DELAY             0xFFFFFFFF // largest 32-bit unsigned
+
+
+volatile uint32_t g_current_tick;
+volatile uint32_t g_current_tick_p;
+
+
+
+
+static inline void tick_increment(void)
+{
+    g_current_tick   +=TICK_FREQ_INCREMENT;
+}
+
+
+uint32_t get_tick(void)
+{
+
+    __disable_irq();
+    uint32_t current = g_current_tick;
+    __enable_irq();
+    return current;
+}
+
+void delay(uint32_t delay){
+
+	uint32_t tickstart = get_tick();
+	uint32_t wait = delay;
+
+	if(wait < MAX_DELAY){
+
+		wait += (uint32_t)TICK_FREQ_INCREMENT;
+
+	}
+	while(get_tick() - tickstart){
+
+
+	}
+
+
+}
+
+
+
+void timebase (void){
+
+	__disable_irq();
+
+	  SysTick->LOAD  = 16000000 - 1U ;                       /* set reload register */
+	  SysTick->VAL   = 0UL;                                             /* Load the SysTick Counter Value */
+	  SysTick->CTRL  = (1U<<2);
+	  SysTick->CTRL  |= (1U<<1);
+	  SysTick->CTRL  |= (1U<<0);
+
+
+
+	__enable_irq();
+
+
+}
+
+
+void SysTick_Handler(void)
+{
+    tick_increment();
+}

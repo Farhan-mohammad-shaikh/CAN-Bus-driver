@@ -263,3 +263,24 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-25 19:46:51.504
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-08-26 08:03:16.743 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-08-26 08:03:17.767
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-26 08:03:20.026
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-26 08:03:20.026
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-26 08:03:23.125
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-26 08:46:13.435
+!MESSAGE Indexed '4_GPIO_LED' (6 sources, 67 headers) in 0.541 sec: 3,271 declarations; 5,465 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)

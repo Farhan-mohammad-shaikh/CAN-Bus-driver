@@ -1,0 +1,51 @@
+#include "bsp.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include "stm32f4xx.h"
+
+void led_init(void)
+{
+	RCC ->AHB1ENR |= (1u<<0);
+	GPIOA ->MODER |= (1<<10);
+	GPIOA ->MODER &=~ (1<<11);
+
+}
+
+void led_low(void)
+{
+	GPIOA ->ODR &=~ (1<<5);
+
+}
+
+
+void led_high(void)
+{
+	GPIOA ->ODR |= (1<<5);
+
+}
+
+
+void push_init(void)
+{
+	RCC ->AHB1ENR |= (1u<<2);
+	GPIOC ->MODER &=~ (1<<26);
+	GPIOC ->MODER &=~ (1<<27);
+
+}
+
+bool get_btn_state(void)
+{
+	if (GPIOC ->IDR & (1U<<13))
+	{
+		return false;
+	}
+
+	else
+	{
+		return true;
+
+	}
+}
+
+

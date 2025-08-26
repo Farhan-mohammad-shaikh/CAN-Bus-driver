@@ -1,0 +1,76 @@
+
+#include <stdio.h>
+#include "uart.h"
+#include "stm32f4xx.h"
+
+static void uart_set_baudrate(uint32_t clk, uint32_t baudrate);
+static uint16_t compute_baud_rate(uint32_t clk, uint32_t baudrate);
+void uart_write_byte(int b);
+
+#define deg_baud_rate   115200
+#define sys_clk         16000000
+
+int __io_putchar (int b)
+{
+	uart_write_byte(b);
+	return b;
+
+}
+
+
+void uart_enable (void)
+{
+
+ // GPIOA set the pin as UART
+ // for that we need to first enable the GPIOA clock and we can see in the block diagram TX and RX (AF) need to be activated
+ // go to the alternate function mapping in  and see the mode and the type .. in this case mode is PA2 and type is AF07
+
+ // enabling the UART clock and do the rest
+
+
+
+	RCC -> APB1ENR |= (1<<0);
+
+	//as the mode is PA2 means the GPIOA 2 pin need to set as alternate function mode
+	GPIOA -> MODER  |= (1U<<5);
+	GPIOA -> MODER &=~ (1u<<4);
+
+	// set AF07
+	GPIOA -> AFR[0] |= (1U<<8);
+	GPIOA -> AFR[0] |= (1U<<9);
+	GPIOA -> AFR[0] |= (1U<<10);
+	GPIOA -> AFR[0] &=~ (1U<<11);
+
+
+	//baud rate setting up
+	uart_set_baudrate(sys_clk,deg_baud_rate);
+
+
+	USART2 -> CR1 = (1U<<3) ;
+	USART2 -> CR1 |= (1U<<13);
+
+}
+
+void uart_write_byte(int b)
+{   //we need two things to write in UART. first in the status reg the TXE bit should be empty and then the data reg bit where we put the character.
+    // Wait until TXE (data register empty)
+    while ((USART2->SR & (1U<<7)) == 0u) { /* spin */ }
+    USART2->DR = (b & 0xFF);
+
+    // Optionally wait for TC to ensure byte fully shifted out
+    // while ((USART2->SR & USART_SR_TC) == 0u) { }
+}
+
+
+
+static uint16_t compute_baud_rate(uint32_t clk, uint32_t baudrate){
+
+	return ((clk + (baudrate/2U)) /baudrate);
+
+}
+
+static void uart_set_baudrate(uint32_t clk, uint32_t baudrate){
+
+	USART2 -> BRR = compute_baud_rate(clk,baudrate);
+
+}
