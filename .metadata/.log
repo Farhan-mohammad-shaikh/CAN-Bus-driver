@@ -284,3 +284,152 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-08-26 08:46:13.435
 !MESSAGE Indexed '4_GPIO_LED' (6 sources, 67 headers) in 0.541 sec: 3,271 declarations; 5,465 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+!SESSION 2025-08-26 20:20:00.546 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-26 20:20:04.033
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-26 20:20:04.034
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-26 20:20:07.293
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-08-31 08:48:17.069 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-31 08:48:21.045
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-31 08:48:21.046
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-31 08:48:23.087
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-08-31 11:06:06.934 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/farhan/test project/can bus project/stm32_can_bus
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-31 11:06:12.050
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-31 11:06:12.051
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-31 11:06:14.061
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-08-31 11:08:48.276 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/farhan/test project/can bus project/stm32_can_bus
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-31 11:08:51.857
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-31 11:08:51.857
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-31 11:08:58.578
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:10:25.239
+!MESSAGE Indexed '2_f44_can_loopback' (9 sources, 69 headers) in 1.1 sec: 3,374 declarations; 6,340 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.021%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:10:27.239
+!MESSAGE Indexed '1_system_drivers-fpu' (4 sources, 63 headers) in 0.565 sec: 3,054 declarations; 5,056 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.025%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:10:27.957
+!MESSAGE Indexed '3_system_drivers-timebase' (6 sources, 67 headers) in 0.543 sec: 3,237 declarations; 5,363 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:10:28.336
+!MESSAGE Indexed '1_f44_can_driver' (4 sources, 63 headers) in 0.322 sec: 3,292 declarations; 5,990 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:10:28.732
+!MESSAGE Indexed '3_f44_can_normal-mode_rx' (9 sources, 71 headers) in 0.394 sec: 3,523 declarations; 6,497 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.02%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:10:28.951
+!MESSAGE Indexed '4_system_drivers-gpio' (7 sources, 69 headers) in 0.215 sec: 3,258 declarations; 5,437 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:10:29.145
+!MESSAGE Indexed '5_system_drivers-adc' (8 sources, 70 headers) in 0.191 sec: 3,271 declarations; 5,517 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:10:29.312
+!MESSAGE Indexed '2_system_drivers-uart' (5 sources, 66 headers) in 0.165 sec: 3,218 declarations; 5,305 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:10:29.607
+!MESSAGE Indexed '3_f44_can_normal-mode_tx' (9 sources, 69 headers) in 0.293 sec: 3,374 declarations; 6,340 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.021%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:10:29.760
+!MESSAGE Indexed '0_test' (3 sources, 62 headers) in 0.153 sec: 3,080 declarations; 5,174 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.024%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:12:31.239
+!MESSAGE Indexed '0' (3 sources, 53 headers) in 0.26 sec: 1,954 declarations; 2,863 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+!SESSION 2025-08-31 11:13:18.940 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-31 11:13:22.531
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-31 11:13:22.532
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-31 11:13:25.117
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-08-31 11:14:28.021 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-31 11:14:31.503
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-31 11:14:31.504
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-31 11:14:34.126
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-31 11:16:36.250
+!MESSAGE Indexed '1' (3 sources, 53 headers) in 0.696 sec: 1,954 declarations; 2,863 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-08-31 11:17:30.783
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2025-08-31 11:17:30.787
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-08-31 11:17:30.787
+!MESSAGE The project description file (.project) for '1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SESSION 2025-08-31 11:18:23.509 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-31 11:18:27.024
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-31 11:18:27.025
+!MESSAGE Log4j2 initialized with config file /home/farhan/test project/can bus project/stm32_can_bus/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-31 11:18:30.611
+!MESSAGE Started RMI Server, listening on port 41337

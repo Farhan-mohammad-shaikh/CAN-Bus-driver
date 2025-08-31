@@ -1,0 +1,7 @@
+11:24:43 **** Build of configuration Debug for project 1_system_drivers-fpu ****
+make -j16 all 
+Src/main.d:1: *** multiple target patterns.  Stop.
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+11:24:43 Build Failed. 1 errors, 0 warnings. (took 148ms)
+
